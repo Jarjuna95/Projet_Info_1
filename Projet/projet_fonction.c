@@ -1,4 +1,22 @@
 #include "projet.h"
+
+void AfficheAnimal(){
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void RechercheAnimal(int critere){
      if(critere==1){
         char nomRecherche[50];
