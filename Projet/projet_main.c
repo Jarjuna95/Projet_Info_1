@@ -12,7 +12,7 @@ int main(){
            i++;
     }
     for(int j=0; j<2; j++){
-        printf("%d, %s, %d, %d, %f, %s \n", refuge[i].numero_id, refuge[i].nom, refuge[i].espece, refuge[i].anniv, refuge[i].poids, refuge[i].comm);
+        printf("%d, %s, %d, %d, %f, %s \n", refuge[j].numero_id, refuge[j].nom, refuge[j].espece, refuge[j].anniv, refuge[j].poids, refuge[j].comm);
         }
            printf("Entrez le nom de l'animal à chercher : ");
     scanf("%s", nomRecherche);
