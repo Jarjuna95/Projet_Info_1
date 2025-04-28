@@ -7,6 +7,8 @@ void RechercheAnimal(int critere){
         if(nomRecherche[0]>='a' || nomRecherche[0]<='z'){
           nomRecherche[0]-=32;
         }
+        
+          
         for (int j = 0; j < i; j++) {
         if (strcmp(refuge[j].nom, nomRecherche) == 0) {
             printf("Animal trouvé : %d, %s, %d, %d, %.2f, %s\n", 
