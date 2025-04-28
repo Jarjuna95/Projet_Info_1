@@ -1,22 +1,9 @@
 #include "projet.h"
 
-void AfficheAnimal(){
+void AfficheAnimal(int indice){
+        printf("%d, %s, %d, %d, %f, %s \n", refuge[indice].numero_id, refuge[indice].nom, refuge[indice].espece, refuge[indice].anniv, refuge[indice].poids, refuge[indice].comm);
+}
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void RechercheAnimal(int critere){
      if(critere==1){
         char nomRecherche[50];
@@ -25,26 +12,18 @@ void RechercheAnimal(int critere){
         if(nomRecherche[0]>='a' || nomRecherche[0]<='z'){
           nomRecherche[0]-=32;
         }
-        
-          
-        for (int j = 0; j < i; j++) {
-        if (strcmp(refuge[j].nom, nomRecherche) == 0) {
-            printf("Animal trouvé : %d, %s, %d, %d, %.2f, %s\n", 
-                   refuge[j].numero_id, 
-                   refuge[j].nom, 
-                   refuge[j].espece, 
-                   refuge[j].anniv, 
-                   refuge[j].poids, 
-                   refuge[j].comm);
-            trouve = 1;
-            break;
+        for (int j = 0; j < 2; j++) {                                       // changer le 2 (nombre d'animal au total
+            if (strcmp(refuge[j].nom, nomRecherche) == 0) {                     //comparer le nom avec les animaux du refuge
+               printf("Animal trouvé voici les informations : \n");
+               AfficheAnimal(j);
+               break;
+            }
         }
-    }
-
-    if (!trouve) {
         printf("Animal non trouvé.\n");
-    }
-    ;
-        } */
+     }
+     else if(critere==2){ 
+          int espece;
+          
+        
 
       
