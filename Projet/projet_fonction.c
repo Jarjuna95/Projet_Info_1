@@ -17,10 +17,6 @@ int Age(int h){
    }
 }
 
-
-
-
-
 void RechercheAnimal(){
      char nomRecherche[50];
      int espece, age;
@@ -41,15 +37,31 @@ void RechercheAnimal(){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &age);        
         }
-     if(espece==-1 && nomRecherche[0]==''){                        // si y'a pas de critère a part l'age
-        printf("Voici notre sélection :\n");
-           for (int k= 0; k < 2; k++) {                            //changer le 2
-                AfficheAnimal(j);
-           }
-     }
-     else if(              ){
+     
         
-         for (int j = 0; j < 2; j++) {                                       // changer le 2 (nombre d'animal au total     
+   /*if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){     
+      for (int k= 0; k < 2; k++) {                                                      //changer le 2
+          if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){                         //si y'a pas de critère a part l'age
+          printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+          }
+      }
+   }*/
+        
+         
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             for (int j = 0; j < 2; j++) {                                       // changer le 2 (nombre d'animal au total     
               if (strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && Age(j)==age){                     //comparer le nom avec les animaux du refuge
                   printf("Animal trouvé voici les informations : \n");
                   AfficheAnimal(j);
