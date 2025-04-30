@@ -13,6 +13,15 @@ int main(){
     }
     for(int j=0; j<2; j++){
         printf("%d, %s, %d, %d, %f, %s \n", refuge[j].numero_id, refuge[j].nom, refuge[j].espece, refuge[j].anniv, refuge[j].poids, refuge[j].comm);
-        }
+    }
+
+    
+
+
+
+
+
+
+    
     return 0;
         }
