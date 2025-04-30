@@ -1,6 +1,2 @@
-1 6.5 0 2023
-Iggy 
-Un chien spécial
-2 8.5 1 2025
-Garfield
-Aime les lasagnes 
+1 Iggy 0 2023 6.5 Un_chien_spécial
+2 Garfield 1 2025 8.5 Aime_les_lasagnes 
