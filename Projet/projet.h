@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef enum{
-        Chien,Chat,Hamster,Autruche
+        chien,chat,hamster,autruche
         }Espece;
         
 typedef struct{
@@ -13,5 +14,9 @@ typedef struct{
         float poids;
         char comm[500];
         }Animal;
+
+void RechercheAnimal(Animal *refuge);
+int Age(int h, Animal *refuge);
+void AfficheAnimal(int indice, Animal* refuge);
       
 
