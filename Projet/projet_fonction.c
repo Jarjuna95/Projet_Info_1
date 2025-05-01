@@ -72,9 +72,9 @@ void RechercheAnimal(Animal *refuge){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j);
              }             
-             else{
+             /*else{
                    printf("Les critères saisies ne correspondent à aucun animal.\n");
-             }
+             }*/
          }
      }
 
