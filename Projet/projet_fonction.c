@@ -29,35 +29,55 @@ void RechercheAnimal(Animal *refuge){
         }
      printf("Quel espèce cherchez-vous ? (0=chien; 1=chat; 2=hamster; 3=autruche; -1=ignorer)\n");
      scanf("%d", &espece);
-        while(espece<0 || espece>3){
+        while(espece<-1 || espece>3){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &espece);
         }
-     printf("Le type d'âge ? (1 pour sénior, 2 pour jeune, 3 pour ado) \n");
+     printf("Le type d'âge ? (1 pour sénior, 2 pour jeune, 3 pour ado, -1 pour ignorer) \n");
      scanf("%d", &age);
-        while(age!=1 && age!=2 && age!=3){
+        while(age!=1 && age!=2 && age!=3 && age!=-1){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &age);        
-        }     
-   
-        
-/*if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){     
-      for (int k= 0; k < 2; k++) {                                                      //changer le 2
-          if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){                         //si y'a pas de critère a part l'age
-          printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
-          }
-      }
-   }*/  
-         for (int j = 0; j < 2; j++) {             // changer le 2 (nombre d'animal au total     
+        }      
+        for (int j = 0; j < 2; j++) {             // changer le 2 (nombre d'animal au total     
              if (strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && Age(j,refuge)==age){                     
                   printf("Animal trouvé voici les informations : \n");
                   AfficheAnimal(j,refuge);
-              }
-          }
-           printf("Non trouvé \n");
+             }
+             else if(strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && age==-1){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(strcmp(refuge[j].nom, nomRecherche) == 0 && espece==-1 && Age(j,refuge)==age){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(strcmp(refuge[j].nom, nomRecherche) == 0 && espece==-1 && age==-1){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && Age(j,refuge)==age){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && age==-1){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(nomRecherche[0]== ' ' && espece==-1 && Age(j,refuge)==age){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }
+             else if(nomRecherche[0]== ' ' && espece==-1 && age==-1){
+                   printf("Voici notre sélection :\n");
+                   AfficheAnimal(j);
+             }             
+             else{
+                   printf("Les critères saisies ne correspondent à aucun animal.\n");
+             }
+         }
      }
-
+// faire si il n'y a pas de critère pour l'age
         
 
       
