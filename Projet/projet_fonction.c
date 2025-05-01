@@ -77,7 +77,7 @@ void RechercheAnimal(Animal *refuge){
              }
          }
      }
-// faire si il n'y a pas de critère pour l'age
+
         
 
       
