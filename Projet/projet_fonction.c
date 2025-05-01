@@ -39,7 +39,9 @@ void RechercheAnimal(Animal *refuge){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &age);        
         }     
-   /*if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){     
+   
+        
+/*if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){     
       for (int k= 0; k < 2; k++) {                                                      //changer le 2
           if(espece==-1 && nomRecherche[0]==''&& Age(j)==age){                         //si y'a pas de critère a part l'age
           printf("Voici notre sélection :\n");
