@@ -78,6 +78,43 @@ void RechercheAnimal(Animal *refuge){
          }
      }
 
+void Adoption(Animal *refuge){
+      int id;
+      printf("Saisir le numéro d'identification de l'animal à adopter:\n");
+      scanf("%d", &id);
+      while(id<0){
+            printf("Il n'y a pas un numéro d'identification de la sorte ressaisir :\n");
+            scanf("%d", &id);
+      }
+      int trouve=0;
+      for(int p=0; p<2; p++){                //changer le 2 plus tard
+          if(refuge[p].numero_id==id){
+            trouve=1;
+          }
+      }
+      if(trouve!=1){
+        printf("Ce numéro d'identification est invalide\n");
+      }
+      FILE * ancienf = fopen("Animal/Animaux.txt", "r");
+      FILE * nouveauf = fopen("Animal/temporaire.txt", "w"); 
+      if(ancienf==NULL || nouveauf==NULL){
+    	printf("Erreur \n");
+        exit(5);
+      }
+      char ligne[2];
+      while(fgets(ligne, sizeof(ligne), ancienf)){
+           int id_fichier;
+           sscanf(ligne, "%d", &id_fichier);
+        if (id_fichier != id) {
+            fputs(ligne, nouveauf);
+        }
+      }
+      fclose(ancienf);
+      fclose(tempf);
+      remove("Animal/Animaux.txt");
+      rename("Animal/temporaire.txt", "Animal/Animaux.txt");
+      printf("L'animal %d a été adopté avec succès.\n", id);
+}   
         
 
       
