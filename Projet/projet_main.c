@@ -15,17 +15,7 @@ int main(){
     /* for(int j=0; j<2; j++){
         printf("%d, %s, %d, %d, %f, %s \n", refuge[j].numero_id, refuge[j].nom, refuge[j].espece, refuge[j].anniv, refuge[j].poids, refuge[j].comm);
     }*/ //txt -> tableau verif
-    printf("Bonjour dans l'accueil de notre refuge"\n);
-    printf("Tapez 1 si vous voulez recherchez un animal, 2 pour ajoutez un animal et 3 pour adoptez un animal :"\n)
-    scanf("%d", & choix);
-    while(choix<1 || choix>3){
-        printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
-         scanf("%d", & choix);
-    }
-    
-
-    
-    
+    printf("Bonjour dans l'accueil de notre refuge"\n); 
     RechercheAnimal(refuge);
      return 0;
 }
