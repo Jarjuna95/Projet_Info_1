@@ -116,16 +116,35 @@ void Adoption(Animal *refuge){
       printf("L'animal %d a été adopté avec succès.\n", id);
 }   
 
-void Menu(int choix, Animal* refuge){
+void Menu(Animal* refuge){
         int continuer;
+        int choix;
+        printf("Tapez 1 si vous voulez recherchez un animal, 2 pour ajoutez un animal et 3 pour adoptez un animal :"\n)
+        scanf("%d", &choix);
+        while(choix<1 || choix>3){
+           printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
+           scanf("%d", &choix);
+        } 
         if(choix==1){
            RechercheAnimal(refuge);
         }
         else if(choix==2){
-          Ajouter(refuge);
+           Ajouter(refuge);
         }
         else if(choix==3){
-          Adoption(refuge);
+           Adoption(refuge);
         }
-        printf("Vous voulez vous continuer vos recherches ? \n
-      
+        printf("Vous voulez vous continuer vos recherches ? (1=oui et 0 =non) \n");
+        scanf("%d", &continuer);
+        while(continuer!=1 && continuer!=0){
+             printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
+             scanf("%d", &contiuer);
+        } 
+        if(continuer==0){
+          return ;
+        }
+        else{
+          Menu(refuge);
+        }
+}
+        
