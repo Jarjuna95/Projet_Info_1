@@ -115,6 +115,17 @@ void Adoption(Animal *refuge){
       rename("Animal/temporaire.txt", "Animal/Animaux.txt");
       printf("L'animal %d a été adopté avec succès.\n", id);
 }   
-        
 
+void Menu(int choix, Animal* refuge){
+        int continuer;
+        if(choix==1){
+           RechercheAnimal(refuge);
+        }
+        else if(choix==2){
+          Ajouter(refuge);
+        }
+        else if(choix==3){
+          Adoption(refuge);
+        }
+        printf("Vous voulez vous continuer vos recherches ? \n
       
