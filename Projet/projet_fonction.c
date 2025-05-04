@@ -113,9 +113,6 @@ void Adoption(Animal *refuge){
       fclose(tempf);
       remove("Animal/Animaux.txt");
       rename("Animal/temporaire.txt", "Animal/Animaux.txt");
-      while (fscanf(fichier, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
-           i++;
-      }  
       printf("L'animal %d a été adopté avec succès.\n", id);
 }   
 
