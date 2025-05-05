@@ -114,7 +114,7 @@ void Adoption(Animal *refuge){
         }
       }
       fclose(ancienf);
-      fclose(tempf);
+      fclose(nouveauf);
       remove("Animal/Animaux.txt");
       rename("Animal/temporaire.txt", "Animal/Animaux.txt");
       printf("L'animal %d a été adopté avec succès.\n", id);
