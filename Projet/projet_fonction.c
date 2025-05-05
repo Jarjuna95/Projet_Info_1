@@ -7,10 +7,10 @@ void AfficheAnimal(int indice, Animal* refuge){
  
 
 int Age(int h, Animal *refuge){
-        if(2025-refuge[h].anniv>2){
+        if(2025-refuge[h].anniv<2){
                   return 2;
           }
-        else if(2025-refuge[h].anniv<10){
+        else if(2025-refuge[h].anniv>10){
                   return 1;
           }
         else{
