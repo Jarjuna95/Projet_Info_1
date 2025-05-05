@@ -148,26 +148,26 @@ void Menu(Animal* refuge){
         }
 }
 
-/* void Day_Food(refuge[]){
+/* void Day_Food(Animal refuge[],int nb_animaux){
     float croq;
-    for(int i=0; i<50;i++){
-        if(i.espece==2){
+    
+    for(int i=0; i<nb_animaux;i++){
+        if(refuge[i].espece==2){
             printf("L'hamster a besoin de 20g de croquettes par jour.\n");
         }
-        else if(i.espece==3){
+        else if(refuge[i].espece==3){
             printf("L'autruche a besoin de 2.5kg de croquettes par jour.\n");
         }
-        else{
-            if(i.age<2){
+        else if(refuge[i].espece==0||refuge[i].espece==1){
+            if(refuge[i].anniv<2){
                 printf("L'animal a besoin de 500g de croquettes par jour.\n");
             }
             else{
-                croq=i.poids*0.1;
+                croq=refuge[i].poids*0.1;
                 printf("L'animal a besoin de %f g de croquettes par jour.\n",croq);
             }
         }
-
-    }
+  }
 }
 
 Animal Ajouter(Animal refuge[]) {
