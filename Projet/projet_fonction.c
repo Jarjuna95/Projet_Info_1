@@ -46,32 +46,32 @@ void RechercheAnimal(Animal *refuge){
              }
              else if(strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && age==-1){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
              else if(strcmp(refuge[j].nom, nomRecherche) == 0 && espece==-1 && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
              else if(strcmp(refuge[j].nom, nomRecherche) == 0 && espece==-1 && age==-1){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
-             else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && Age(j,refuge)==age){
+            /* else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
              else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && age==-1){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
              else if(nomRecherche[0]== ' ' && espece==-1 && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
+                   AfficheAnimal(j,refuge);
              }
              else if(nomRecherche[0]== ' ' && espece==-1 && age==-1){
                    printf("Voici notre sélection :\n");
-                   AfficheAnimal(j);
-             }             
+                   AfficheAnimal(j,refuge);
+             }  */           
              /*else{
                    printf("Les critères saisies ne correspondent à aucun animal.\n");
              }*/
