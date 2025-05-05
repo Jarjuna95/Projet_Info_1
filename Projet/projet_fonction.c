@@ -114,7 +114,7 @@ void Adoption(Animal *refuge){
       remove("Animal/Animaux.txt");
       rename("Animal/temporaire.txt", "Animal/Animaux.txt");
       printf("L'animal %d a été adopté avec succès.\n", id);
-}   
+}   //verifier car marche une fois sur deux
 
 void Menu(Animal* refuge){
         int continuer;
