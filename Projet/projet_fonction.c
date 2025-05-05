@@ -60,7 +60,7 @@ void RechercheAnimal(Animal *refuge){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
-            /* else if(ignore==0 && refuge[j].espece==espece && Age(j,refuge)==age){
+             else if(ignore==0 && refuge[j].espece==espece && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
@@ -75,10 +75,10 @@ void RechercheAnimal(Animal *refuge){
              else if(ignore==0 && espece==-1 && age==-1){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
-             }  */           
-             /*else{
+             }  // a verifier        
+             else{
                    printf("Les critères saisies ne correspondent à aucun animal.\n");
-             }*/
+             }
          }
      }
 
