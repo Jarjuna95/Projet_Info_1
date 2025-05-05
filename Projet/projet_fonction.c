@@ -22,10 +22,14 @@ int Age(int h, Animal *refuge){
 void RechercheAnimal(Animal *refuge){
      char nomRecherche[50];
      int espece, age;
+     int ignore = -1;
      printf("Entrez le nom de l'animal à chercher (laissez vide pour ignorer):\n");
      scanf("%s", nomRecherche);
         if(nomRecherche[0]>='a' || nomRecherche[0]<='z'){
-          nomRecherche[0]-=32;
+          nomRecherche[0]-=32;      
+        }
+        if(strcmp(nomRecherche, "Vide") == 0){
+          ignore=0;
         }
      printf("Quel espèce cherchez-vous ? (0=chien; 1=chat; 2=hamster; 3=autruche; -1=ignorer)\n");
      scanf("%d", &espece);
@@ -56,19 +60,19 @@ void RechercheAnimal(Animal *refuge){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
-            /* else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && Age(j,refuge)==age){
+            /* else if(ignore==0 && refuge[j].espece==espece && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
-             else if(nomRecherche[0]== ' ' && refuge[j].espece==espece && age==-1){
+             else if(ignore==0 && refuge[j].espece==espece && age==-1){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
-             else if(nomRecherche[0]== ' ' && espece==-1 && Age(j,refuge)==age){
+             else if(ignore==0 && espece==-1 && Age(j,refuge)==age){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }
-             else if(nomRecherche[0]== ' ' && espece==-1 && age==-1){
+             else if(ignore==0 && espece==-1 && age==-1){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }  */           
