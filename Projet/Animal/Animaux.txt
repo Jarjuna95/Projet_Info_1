@@ -1,7 +1,7 @@
 1 Iggy 0 2023 6.5 Un_chien_spécial
 2 Ignir 3 2002 120 Aime_cracher_du_feu 
 3 Salameche 3 2016 8.5 Aime_manger
-4 Reptincel 3 2025 8.5 Aime_les_lasagnes
+4 Placidusax 3 2019 356 Seigneur_draconique
 5 Dracolosse 3 1996 210 Souriant
 6 Rayquaza 3 2004 206.5 Majestueux
 7 Drattak 3  2002 102.6 Agressif
@@ -28,28 +28,26 @@
 28 Rocabot 0 2012 6.2 Joueur
 29 Arcanin 0 2017 66 Rapide
 30 Caninos 0 2025 4.8 Mord_beaucoup
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-2 Garfield 1 2025 8.5 Aime_les_lasagnes
-
-2 Garfield 1 2025 8.5 Aime_les_lasagne
+31 Garfield 1 2025 8.5 Aime_les_lasagnes
+32 Flamiaou 1 2022 4.3 Petit_felin_flamboyant
+33 Tom 1 2009 6.8 Chasseur_de_souris
+34 Kurama 1 2013 5.7 Un_petit_demon
+35 Simba 1 2024 3.4 Roi_des_felins
+36 Miaouss 1 2006 6.8 Chat_toujours_asticieux
+37 Shalquoir 1 2007 4.2 Mystérieux_et_calme
+38 Happy 1 2019 6.3 Toujours_Joyeux
+39 Sonic 1 2000 7.4 Rapide_comme_l_eclair
+40 Ratchet 1 2022 3.2 Chat_ingenieux
+41 Jerry 2 2017 2.6 Mangeur_de_fromage
+42 Pikachu 2 2009 4.5 Aime_l_electricite
+43 
+44
+45
+46
+47
+48
+49
+50
 
 
 
