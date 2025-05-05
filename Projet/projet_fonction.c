@@ -147,4 +147,72 @@ void Menu(Animal* refuge){
           Menu(refuge);
         }
 }
-        
+
+/* void Day_Food(refuge[]){
+    float croq;
+    for(int i=0; i<50;i++){
+        if(i.espece==2){
+            printf("L'hamster a besoin de 20g de croquettes par jour.\n");
+        }
+        else if(i.espece==3){
+            printf("L'autruche a besoin de 2.5kg de croquettes par jour.\n");
+        }
+        else{
+            if(i.age<2){
+                printf("L'animal a besoin de 500g de croquettes par jour.\n");
+            }
+            else{
+                croq=i.poids*0.1;
+                printf("L'animal a besoin de %f g de croquettes par jour.\n",croq);
+            }
+        }
+
+    }
+}
+
+Animal Ajouter(Animal refuge[]) {
+Animal a;
+int trouve = 0; //verifie qu il y a de la place dans le refuge
+
+printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
+scanf("%d",& a.espece);
+ 
+printf("Quelle est le nom de l'animal ?\n");
+scanf("%s",a.nom);
+
+printf("Quel est le poids de l'animal ?\n");
+scanf("%f", &a.poids);
+
+printf("Quelle est l'année de naissance ?\n");
+scanf("%d", &a.anniv);
+
+printf("Quelle est la caractéristique ?\n");
+scanf("%s", a.comm);
+
+  for (int i = 0; i < 50; i++) {
+        if (refuge[i].numero_id == 0) { // une place libre
+            a.numero_id = i + 1;
+            refuge[i] = a;
+            trouve = 1;
+
+            FILE* fichier = fopen("Animal/Animaux.txt", "a"); // on ajoute à la fin du fichier
+            if (fichier == NULL) {
+                printf("Erreur lors de l'ouverture du fichier.\n");
+                exit(1);
+            }
+
+            fprintf(fichier, "%d %s %d %d %.f %s\n",
+                    a.numero_id, a.nom, a.espece, a.anniv, a.poids, a.comm);
+            fclose(fichier);
+            printf("Animal ajouté avec succès !\n");
+            return a;
+        }
+    }
+
+    if (!trouve) {
+        printf("Erreur : le refuge est plein.\n");
+    }
+
+    return a;
+} 
+*/
