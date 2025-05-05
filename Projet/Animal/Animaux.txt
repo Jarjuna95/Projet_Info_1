@@ -1,5 +1,5 @@
 1 Iggy 0 2023 6.5 Un_chien_spécial
-2 Garfield 1 2025 8.5 Aime_les_lasagnes 
+2 Ignir 1 2002 120 Aime_cracher_du_feu 
 3 Salameche 2 2025 16.5 Aime_les_lasagnes
 2 Garfield 1 2025 8.5 Aime_les_lasagnes
 2 Garfield 1 2025 8.5 Aime_les_lasagnes
