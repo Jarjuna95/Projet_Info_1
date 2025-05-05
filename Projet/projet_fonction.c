@@ -101,7 +101,7 @@ void Adoption(Animal *refuge){
     	printf("Erreur \n");
         exit(5);
       }
-      char ligne[2];
+      char ligne[300];
       while(fgets(ligne, sizeof(ligne), ancienf)){
            int id_fichier;
            sscanf(ligne, "%d", &id_fichier);
