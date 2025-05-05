@@ -1,16 +1,16 @@
 1 Iggy 0 2023 6.5 Un_chien_spécial
 2 Ignir 3 2002 120 Aime_cracher_du_feu 
 3 Salameche 3 2016 8.5 Aime_manger
-4 Placidusax 3 2019 356 Seigneur_draconique
+4 Placidusax 3 2001 356 Seigneur_draconique
 5 Dracolosse 3 1996 210 Souriant
-6 Rayquaza 3 2004 206.5 Majestueux
-7 Drattak 3  2002 102.6 Agressif
+6 Rayquaza 3 2004 206.5 Protecteur_des_cieux
+7 Bayle 3 2002 321 Terrifiant_dragon
 8 Carchacrok 3 2006 95 Féroce
 9 Dialga 3 2006 683 Mystérieux
 10 Palkia 3 2006 336 Elégante
 11 Reshiram 3 2010 330 Bavard
 12 Zekrom 3 2010 345 Ténèbreux
-13 Shenron 3 1986 2 Calme
+13 Shenron 3 1986 2 Realisateur_de_souhaits
 14 Haku 3 2001 4.5 Protecteur
 15 Bahamut 3 1987 20 Avare
 16 Deathwing 3 2010 50 Géant
@@ -37,17 +37,17 @@
 37 Shalquoir 1 2007 4.2 Mystérieux_et_calme
 38 Happy 1 2019 6.3 Toujours_Joyeux
 39 Sonic 1 2000 7.4 Rapide_comme_l_eclair
-40 Ratchet 1 2022 3.2 Chat_ingenieux
+40 Ratchet 1 2022 5.2 Chat_ingenieux
 41 Jerry 2 2017 2.6 Mangeur_de_fromage
-42 Pikachu 2 2009 4.5 Aime_l_electricite
-43 
-44
-45
-46
-47
-48
-49
-50
+42 Pikachu 2 2009 3.5 Aime_l_electricite
+43 Morpeko 2 2015 3.2 Grand_gourmand
+44 Remy 2 2020 2.2 Aime_la_cuisine
+45 Mickey 2 2001 3.1 Tres_sympa
+46 Speedy 2 2004 3.0 Tres_rapide
+47 Croutard 2 2010 2.7 Fuie_a_toute_occasion
+48 Guizmo 2 2006 2.4 Plutot_malin
+49 Rapido 2 2006 2.4 Courageux_face_au_danger
+50 Chopper 2 2014 2.1 Tres_amicale
 
 
 
