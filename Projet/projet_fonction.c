@@ -154,7 +154,6 @@ void Menu(Animal* refuge){
 
 void Day_Food(Animal refuge[],int nb_animaux){
     float croq;
-    
     for(int i=0; i<nb_animaux;i++){
         if(refuge[i].espece==2){
             printf("L'hamster a besoin de 20g de croquettes par jour.\n");
@@ -163,7 +162,7 @@ void Day_Food(Animal refuge[],int nb_animaux){
             printf("L'autruche a besoin de 2.5kg de croquettes par jour.\n");
         }
         else if(refuge[i].espece==0||refuge[i].espece==1){
-            if(Age(i,refuge)<2){
+            if(Age(i,refuge)==2){
                 printf("L'animal a besoin de 500g de croquettes par jour.\n");
             }
             else{
