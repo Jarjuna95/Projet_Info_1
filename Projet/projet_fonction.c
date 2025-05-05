@@ -152,7 +152,7 @@ void Menu(Animal* refuge){
         }
 }
 
-/* void Day_Food(Animal refuge[],int nb_animaux){
+void Day_Food(Animal refuge[],int nb_animaux){
     float croq;
     
     for(int i=0; i<nb_animaux;i++){
@@ -163,7 +163,7 @@ void Menu(Animal* refuge){
             printf("L'autruche a besoin de 2.5kg de croquettes par jour.\n");
         }
         else if(refuge[i].espece==0||refuge[i].espece==1){
-            if(refuge[i].anniv<2){
+            if(Age(i,refuge)<2){
                 printf("L'animal a besoin de 500g de croquettes par jour.\n");
             }
             else{
@@ -174,7 +174,7 @@ void Menu(Animal* refuge){
   }
 }
 
-Animal Ajouter(Animal refuge[]) {
+/*Animal Ajouter(Animal refuge[]) {
 Animal a;
 int trouve = 0; //verifie qu il y a de la place dans le refuge
 
