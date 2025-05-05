@@ -2,6 +2,9 @@
 
 int main(){
     int i=0;
+    int nb_animaux;
+    printf("Combien y a t'il d'animal dans le reufuge actuellement");
+    scanf("%d",&nb_animaux);
     int choix;
     Animal refuge[2];
     FILE * fichier = fopen("Animal/Animaux.txt", "r");
