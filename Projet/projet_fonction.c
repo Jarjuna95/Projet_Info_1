@@ -139,6 +139,7 @@ void Menu(Animal* refuge){
           while (fscanf(maj1, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
            i++;
            }
+	   fclose(maj1);
         }
         else if(choix==3){
            Adoption(refuge);
@@ -150,6 +151,7 @@ void Menu(Animal* refuge){
           while (fscanf(maj, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
            i++;
            }
+	   fclose(maj);
         }
         printf("Vous voulez vous continuer vos recherches ? (1=oui et 0 =non) \n");
         scanf("%d", &continuer);
