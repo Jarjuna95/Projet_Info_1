@@ -18,7 +18,7 @@ int main(){
     /* for(int j=0; j<50; j++){
         printf("%d, %s, %d, %d, %f, %s \n", refuge[j].numero_id, refuge[j].nom, refuge[j].espece, refuge[j].anniv, refuge[j].poids, refuge[j].comm);
     }*/ //txt -> tableau verif
-    printf("Bonjour dans l'accueil de notre refuge"\n); 
+    printf("Bonjour dans l'accueil de notre refuge\n"); 
     Menu(refuge);
      return 0;
 }
