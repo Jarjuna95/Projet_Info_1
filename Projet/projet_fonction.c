@@ -185,15 +185,30 @@ int trouve = 0; //verifie qu il y a de la place dans le refuge
 
 printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
 scanf("%d",& a.espece);
- 
+ while(a.espece<-1 && a.espece>3){
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.espece);
+        }  	
+  		
 printf("Quelle est le nom de l'animal ?\n");
 scanf("%s",a.nom);
+if(a.nom[0]>='a' && a.nom[0]<='z'){
+          a.nom[0]-=32;      
+        }
 
 printf("Quel est le poids de l'animal ?\n");
 scanf("%f", &a.poids);
+ while(a.poids<0){ 
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.poids);        
+        }      
 
 printf("Quelle est l'année de naissance ?\n");
 scanf("%d", &a.anniv);
+while(a.anniv<0){ 
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.anniv);        
+        } 
 
 printf("Quelle est la caractéristique ?\n");
 scanf("%s", a.comm);
@@ -204,7 +219,7 @@ scanf("%s", a.comm);
             refuge[i] = a;
             trouve = 1;
 
-            FILE* fichier = fopen("Animal/Animaux.txt", "a"); // on ajoute à la fin du fichier
+            FILE* fichier = fopen("Animal.txt", "a"); // on ajoute à la fin du fichier
             if (fichier == NULL) {
                 printf("Erreur lors de l'ouverture du fichier.\n");
                 exit(1);
@@ -218,10 +233,10 @@ scanf("%s", a.comm);
         }
     }
 
-    if (!trouve) {
+    if (trouve!=1) {
         printf("Erreur : le refuge est plein.\n");
     }
 
     return a;
-} 
+}
 */
