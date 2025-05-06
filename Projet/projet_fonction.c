@@ -134,6 +134,14 @@ void Menu(Animal* refuge){
         }
         else if(choix==3){
            Adoption(refuge);
+	   FILE * maj = fopen("Animal/Animaux.txt", "r");
+           if(maj==NULL){
+    	     printf("Erreur \n");
+             exit(1);
+           }
+          while (fscanf(maj, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
+           i++;
+           }
         }
         printf("Vous voulez vous continuer vos recherches ? (1=oui et 0 =non) \n");
         scanf("%d", &continuer);
