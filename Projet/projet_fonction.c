@@ -153,27 +153,27 @@ void Day_Food(Animal refuge[],int nb_animaux){
     float croq;
     for(int i=0; i<nb_animaux;i++){
         if(refuge[i].espece==2){
-            printf("L'hamster a besoin de 20g de croquettes par jour.\n");
+            printf("%s a besoin de 20g de croquettes par jour.\n", refuge[i].nom);
         }
         else if(refuge[i].espece==3){
-            printf("L'autruche a besoin de 2.5kg de croquettes par jour.\n");
+            printf("%s a besoin de 2.5kg de croquettes par jour.\n", refuge[i].nom);
         }
         else if(refuge[i].espece==0||refuge[i].espece==1){
             if(Age(i,refuge)==2){
                 if(refuge[i].espece==0){
-                printf("Le chien a besoin de 500g de croquettes par jour.\n");
+                printf("%s a besoin de 500g de croquettes par jour.\n", refuge[i].nom);
             }
             else{
-            	printf("Le chat a besoin de 500g de croquettes par jour.\n");
+            	printf("%s a besoin de 500g de croquettes par jour.\n", refuge[i].nom);
             }
             }
             else{
                 croq=refuge[i].poids*0.1;
                 if(refuge[i].espece==0){
-                printf("Le chien a besoin de %f g de croquettes par jour.\n",croq);
+                printf("%s a besoin de %f g de croquettes par jour.\n", refuge[i].nom,croq);
             }
                 else{
-                printf("Le chat a besoin de %f g de croquettes par jour.\n",croq);
+                printf("%s a besoin de %f g de croquettes par jour.\n", refuge[i].nom,croq);
                 }
             }
         }
