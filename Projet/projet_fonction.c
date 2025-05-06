@@ -251,4 +251,74 @@ scanf("%s", a.comm);
 
     return a;
 } // dmd a la prof cmt mettre a jour le tableau
+
+// deuxieme version
+
+
+Animal Ajouter(Animal refuge[]) {
+Animal a;
+int trouve = 0; //verifie qu il y a de la place dans le refuge
+
+printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
+scanf("%d",& a.espece);
+ while(a.espece<-1 && a.espece>3){
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.espece);
+        }          
+                  
+printf("Quelle est le nom de l'animal ?\n");
+scanf("%s",a.nom);
+if(a.nom[0]>='a' && a.nom[0]<='z'){
+          a.nom[0]-=32;      
+        }
+
+printf("Quel est le poids de l'animal ?\n");
+scanf("%f", &a.poids);
+ while(a.poids<0){
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.poids);        
+        }      
+
+printf("Quelle est l'année de naissance ?\n");
+scanf("%d", &a.anniv);
+while(a.anniv<0){
+             printf("Erreur veuillez ressaisir :\n");
+             scanf("%d", &a.anniv);        
+        }
+
+printf("Quelle est la caractéristique ?\n");
+scanf("%s", a.comm);
+
+  for (int i = 0; i < 50; i++) {
+        if (refuge[i].numero_id == 0) { // une place libre
+            a.numero_id = rand()%51;
+            for(int j=0; j<50;j++){
+            if(refuge[j].numero_id==a.numero_id){
+            a.numero_id = rand()%51;
+            }
+            }
+            refuge[i] = a;
+            trouve = 1;
+
+            FILE* fichier = fopen("Animal/Animaux.txt", "a"); // on ajoute à la fin du fichier
+            if (fichier == NULL) {
+                printf("Erreur lors de l'ouverture du fichier.\n");
+                exit(1);
+            }
+
+            fprintf(fichier, "%d %s %d %d %f %s\n",
+                    a.numero_id, a.nom, a.espece, a.anniv, a.poids, a.comm);
+            fclose(fichier);
+            printf("Animal ajouté avec succès !\n");
+            return a;
+        }
+    }
+
+    if (trouve!=1) {
+        printf("Erreur : le refuge est plein.\n");
+    }
+return a;
+  
+}
+
 */
