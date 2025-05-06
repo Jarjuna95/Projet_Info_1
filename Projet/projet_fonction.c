@@ -25,7 +25,7 @@ void RechercheAnimal(Animal *refuge){
      int ignore = -1;
      printf("Entrez le nom de l'animal à chercher (laissez vide pour ignorer):\n");
      scanf("%s", nomRecherche);
-        if(nomRecherche[0]>='a' || nomRecherche[0]<='z'){
+        if(nomRecherche[0]>='a' && nomRecherche[0]<='z'){
           nomRecherche[0]-=32;      
         }
         if(strcmp(nomRecherche, "Vide") == 0){
@@ -76,9 +76,6 @@ void RechercheAnimal(Animal *refuge){
                    printf("Voici notre sélection :\n");
                    AfficheAnimal(j,refuge);
              }  // a verifier        
-             else{
-                   printf("Les critères saisies ne correspondent à aucun animal.\n");
-             }
          }
      }
 
@@ -118,7 +115,7 @@ void Adoption(Animal *refuge){
       remove("Animal/Animaux.txt");
       rename("Animal/temporaire.txt", "Animal/Animaux.txt");
       printf("L'animal %d a été adopté avec succès.\n", id);
-}   //verifier car marche une fois sur deux
+}   //demander à la prof cmt mettre a jour le tableau
 
 void Menu(Animal* refuge){
         int continuer;
