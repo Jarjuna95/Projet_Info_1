@@ -139,7 +139,7 @@ void Menu(Animal* refuge){
         scanf("%d", &continuer);
         while(continuer!=1 && continuer!=0){
              printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
-             scanf("%d", &contiuer);
+             scanf("%d", &continuer);
         } 
         if(continuer==0){
           return ;
