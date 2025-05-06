@@ -43,7 +43,7 @@ void RechercheAnimal(Animal *refuge){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &age);        
         }      
-        for (int j = 0; j <50; j++) {             // changer le 2 (nombre d'animal au total     
+        for (int j = 0; j <50; j++) {                 
              if (strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && Age(j,refuge)==age){                     
                   printf("Animal trouvé voici les informations : \n");
                   AfficheAnimal(j,refuge);
@@ -88,7 +88,7 @@ void Adoption(Animal *refuge){
             scanf("%d", &id);
       }
       int trouve=0;
-      for(int p=0; p<50; p++){                //changer le 2 plus tard
+      for(int p=0; p<50; p++){                
           if(refuge[p].numero_id==id){
             trouve=1;
           }
