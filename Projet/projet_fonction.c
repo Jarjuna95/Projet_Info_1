@@ -23,7 +23,7 @@ void RechercheAnimal(Animal *refuge){
      char nomRecherche[50];
      int espece, age;
      int ignore = -1;
-     printf("Entrez le nom de l'animal à chercher (laissez vide pour ignorer):\n");
+     printf("Entrez le nom de l'animal à chercher (écrire vide pour ignorer):\n");
      scanf("%s", nomRecherche);
         if(nomRecherche[0]>='a' && nomRecherche[0]<='z'){
           nomRecherche[0]-=32;      
