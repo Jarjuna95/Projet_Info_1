@@ -18,5 +18,7 @@ typedef struct{
 void RechercheAnimal(Animal *refuge);
 int Age(int h, Animal *refuge);
 void AfficheAnimal(int indice, Animal* refuge);
-      
+void Adoption(Animal *refuge);
+void Day_Food(Animal refuge[],int nb_animaux);
+Animal Ajouter(Animal refuge[]);      
 
