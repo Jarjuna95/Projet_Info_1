@@ -250,5 +250,5 @@ scanf("%s", a.comm);
     }
 
     return a;
-} 
+} // dmd a la prof cmt mettre a jour le tableau
 */
