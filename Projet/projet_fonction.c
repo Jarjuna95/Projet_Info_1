@@ -100,7 +100,7 @@ void Adoption(Animal *refuge){
       FILE * nouveauf = fopen("Animal/temporaire.txt", "w"); 
       if(ancienf==NULL || nouveauf==NULL){
     	printf("Erreur \n");
-        exit(5);
+        exit(50);
       }
       char ligne[300];
       while(fgets(ligne, sizeof(ligne), ancienf)){
@@ -131,13 +131,21 @@ void Menu(Animal* refuge){
         }
         else if(choix==2){
            Ajouter(refuge);
+	   FILE * maj1 = fopen("Animal/Animaux.txt", "r");
+           if(maj1==NULL){
+    	     printf("Erreur \n");
+             exit(19);
+           }
+          while (fscanf(maj1, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
+           i++;
+           }
         }
         else if(choix==3){
            Adoption(refuge);
 	   FILE * maj = fopen("Animal/Animaux.txt", "r");
            if(maj==NULL){
     	     printf("Erreur \n");
-             exit(1);
+             exit(19);
            }
           while (fscanf(maj, "%d %s %d %d %f %s", &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece, &refuge[i].anniv, &refuge[i].poids, refuge[i].comm) == 6) {
            i++;
