@@ -120,7 +120,7 @@ void Adoption(Animal *refuge){
 void Menu(Animal* refuge){
         int continuer;
         int choix;
-        printf("Tapez 1 si vous voulez recherchez un animal, 2 pour ajoutez un animal et 3 pour adoptez un animal :"\n)
+        printf("Tapez 1 si vous voulez recherchez un animal, 2 pour ajoutez un animal et 3 pour adoptez un animal :"\n);
         scanf("%d", &choix);
         while(choix<1 && choix>3){
            printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
