@@ -275,15 +275,17 @@ scanf("%s", a.comm);
 
 Animal Ajouter(Animal refuge[]) {
 Animal a;
+int id_unique = rand() % 101;
+int existe = 1;
 int trouve = 0; //verifie qu il y a de la place dans le refuge
 
 printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
 scanf("%d",& a.espece);
- while(a.espece<-1 && a.espece>3){
+ while(a.espece<0 && a.espece>3){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &a.espece);
-        }          
-                  
+        }  	
+  		
 printf("Quelle est le nom de l'animal ?\n");
 scanf("%s",a.nom);
 if(a.nom[0]>='a' && a.nom[0]<='z'){
@@ -292,39 +294,44 @@ if(a.nom[0]>='a' && a.nom[0]<='z'){
 
 printf("Quel est le poids de l'animal ?\n");
 scanf("%f", &a.poids);
- while(a.poids<0){
+ while(a.poids<0){ 
              printf("Erreur veuillez ressaisir :\n");
-             scanf("%d", &a.poids);        
+             scanf("%f", &a.poids);        
         }      
 
 printf("Quelle est l'année de naissance ?\n");
 scanf("%d", &a.anniv);
-while(a.anniv<0){
+while(a.anniv<0){ 
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &a.anniv);        
-        }
+        } 
 
 printf("Quelle est la caractéristique ?\n");
 scanf("%s", a.comm);
 
   for (int i = 0; i < 50; i++) {
         if (refuge[i].numero_id == 0) { // une place libre
-            a.numero_id = rand()%51;
-            for(int j=0; j<50;j++){
-            if(refuge[j].numero_id==a.numero_id){
-            a.numero_id = rand()%51;
-            }
-            }
+            while (existe==1) {
+    existe = 0; // on suppose qu'il est unique
+    for (int j = 0; j < 50; j++) {
+        if (refuge[j].numero_id == id_unique) {
+            existe = 1; // il existe déjà, donc pas bon
+            id_unique = rand() % 51; // on en génère un autre
+            break;
+        }
+    }
+}
+	    a.numero_id = id_unique;
             refuge[i] = a;
             trouve = 1;
 
-            FILE* fichier = fopen("Animal/Animaux.txt", "a"); // on ajoute à la fin du fichier
+            FILE* fichier = fopen("Animal.txt", "a"); // on ajoute à la fin du fichier
             if (fichier == NULL) {
                 printf("Erreur lors de l'ouverture du fichier.\n");
                 exit(1);
             }
 
-            fprintf(fichier, "%d %s %d %d %f %s\n",
+            fprintf(fichier, "%d %s %d %d %.f %s\n",
                     a.numero_id, a.nom, a.espece, a.anniv, a.poids, a.comm);
             fclose(fichier);
             printf("Animal ajouté avec succès !\n");
@@ -335,8 +342,8 @@ scanf("%s", a.comm);
     if (trouve!=1) {
         printf("Erreur : le refuge est plein.\n");
     }
-return a;
-  
+
+    return a;
 }
 
 */
