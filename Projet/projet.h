@@ -25,4 +25,4 @@ void AfficheAnimal(int indice, Animal* refuge);
 void Adoption(Animal *refuge);
 void Day_Food(Animal refuge[]);
 Animal Ajouter(Animal refuge[]); 
-void Menu(Animal* refuge);     
+void Menu(Animal* refuge);    
