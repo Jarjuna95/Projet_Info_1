@@ -22,6 +22,12 @@ void Musique(){
     } //fait avec Chatgpt 
 
 
+void vide_buffer(){
+     while(getchar()!='\n'){
+     }
+}
+
+
 void Affichageespece(int espece){
      if(espece==0){
        printf("Espece            : Chien\n");
@@ -88,15 +94,19 @@ void RechercheAnimal(Animal *refuge){
         }
      printf("Quel espèce cherchez-vous ? (0=chien; 1=chat; 2=hamster; 3=dragon; -1=ignorer)\n");
      scanf("%d", &espece);
+     vide_buffer();
         while(espece<-1 || espece>3){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &espece);
+             vide_buffer();
         }
      printf("Le type d'âge ? (1 pour sénior, 2 pour jeune, 3 pour ado, -1 pour ignorer) \n");
      scanf("%d", &age);
+     vide_buffer();
         while(age!=1 && age!=2 && age!=3 && age!=-1){
              printf("Erreur veuillez ressaisir :\n");
-             scanf("%d", &age);        
+             scanf("%d", &age);
+             vide_buffer();        
         }      
         for (int j = 0; j <50; j++) {                 
              if (strcmp(refuge[j].nom, nomRecherche) == 0 && refuge[j].espece==espece && Age(j,refuge)==age){                     
@@ -141,13 +151,15 @@ void RechercheAnimal(Animal *refuge){
 }
 
 void Adoption(Animal *refuge){
-      int id;
+      int id=-1;
       int count=0;
       printf("Saisir le numéro d'identification de l'animal à adopter:\n");
       scanf("%d", &id);
+      vide_buffer();
       while(id<0){
             printf("Il n'y a pas un numéro d'identification de la sorte ressaisir :\n");
             scanf("%d", &id);
+            vide_buffer();
       }
       int trouve=0;
       for(int p=0; p<50; p++){                
@@ -203,9 +215,11 @@ void Menu(Animal* refuge){
         printf("------------------------\n");
         printf("Saisissez votre choix :\n");
         scanf("%d", &choix);
+        vide_buffer(); // eviter infini
         while(choix<1 || choix>4){
            printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
            scanf("%d", &choix);
+           vide_buffer();
         } 
         
         if(choix==1){
@@ -226,9 +240,11 @@ void Menu(Animal* refuge){
 
         printf("\nVous voulez vous continuer vos recherches ? (1=oui et 0 =non) \n");
         scanf("%d", &continuer);
+        vide_buffer();
         while(continuer!=1 && continuer!=0){
              printf("Erreur dans la saisie, veuillez ressaisir un chiffre :\n");
              scanf("%d", &continuer);
+             vide_buffer();
         } 
         if(continuer==0){
           printf("Merci d'être passer par notre refuge !\n"); 
@@ -296,9 +312,11 @@ Animal Ajouter(Animal refuge[]) {
 
     printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
     scanf("%d",& a.espece);
-    while(a.espece<-1 || a.espece>3){
+    vide_buffer();
+    while(a.espece<-1 && a.espece>3){
              printf("Erreur veuillez ressaisir :\n");
              scanf("%d", &a.espece);
+             vide_buffer();
     }          
                   
     printf("Quelle est le nom de l'animal ?\n");
@@ -309,16 +327,20 @@ Animal Ajouter(Animal refuge[]) {
 
     printf("Quel est le poids de l'animal ?\n");
     scanf("%f", &a.poids);
+    vide_buffer();
     while(a.poids<0){
              printf("Erreur veuillez ressaisir :\n");
-             scanf("%f", &a.poids);        
+             scanf("%f", &a.poids);
+             vide_buffer();        
     }      
 
     printf("Quelle est l'année de naissance ?\n");
     scanf("%d", &a.anniv);
+    vide_buffer();
     while(a.anniv<0){
           printf("Erreur veuillez ressaisir :\n");
-          scanf("%d", &a.anniv);        
+          scanf("%d", &a.anniv); 
+          vide_buffer();       
     }
 
     printf("Quelle est la caractéristique ?\n");
