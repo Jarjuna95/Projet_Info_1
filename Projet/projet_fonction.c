@@ -86,7 +86,7 @@ void RechercheAnimal(Animal *refuge){
         if(strcmp(nomRecherche, "Vide") == 0){
           ignore=0;
         }
-     printf("Quel espèce cherchez-vous ? (0=chien; 1=chat; 2=hamster; 3=autruche; -1=ignorer)\n");
+     printf("Quel espèce cherchez-vous ? (0=chien; 1=chat; 2=hamster; 3=dragon; -1=ignorer)\n");
      scanf("%d", &espece);
         while(espece<-1 || espece>3){
              printf("Erreur veuillez ressaisir :\n");
