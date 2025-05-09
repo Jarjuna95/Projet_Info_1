@@ -310,7 +310,7 @@ Animal Ajouter(Animal refuge[]) {
     Animal a;
     int trouve = 0; //verifie qu il y a de la place dans le refuge
 
-    printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Autruche)\n");
+    printf("Quelle est l'espèce de votre animal qui a été confié? (0=Chien, 1=Chat, 2=Hamster,3= Dragon)\n");
     scanf("%d",& a.espece);
     vide_buffer();
     while(a.espece<-1 && a.espece>3){
