@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 typedef enum{
-        chien,chat,hamster,autruche
+        chien,chat,hamster,dragon
         }Espece;
         
 typedef struct{
@@ -16,9 +17,12 @@ typedef struct{
         }Animal;
 
 void RechercheAnimal(Animal *refuge);
+void Musique();
+void Affichageespece(int espece);
 int Age(int h, Animal *refuge);
+void ChargerNvTab(Animal* refuge, int* taille);
 void AfficheAnimal(int indice, Animal* refuge);
 void Adoption(Animal *refuge);
-void Day_Food(Animal refuge[],int nb_animaux);
-Animal Ajouter(Animal refuge[]);      
-
+void Day_Food(Animal refuge[]);
+Animal Ajouter(Animal refuge[]); 
+void Menu(Animal* refuge);     
