@@ -346,16 +346,31 @@ Animal Ajouter(Animal refuge[]) {
     printf("Quelle est la caractéristique ?\n");
     scanf("%s", a.comm);
 
-    for (int i = 0; i < 50; i++) {
+    /*for (int i = 0; i < 50; i++) {
          if (refuge[i].numero_id == 0) { // une place libre
             a.numero_id = 1+rand()%50;
               for(int j=0; j<50;j++){
                  if(refuge[j].numero_id==a.numero_id){
                     a.numero_id = 1+rand()%50;
                  }
-              }
+              }*/
+       for (int i = 0; i < 50; i++) {
+            if (refuge[i].numero_id == 0) { // une place libre
+               int id_unique;
+               int existe;
+        do {
+            id_unique = 1 + rand() % 50;
+            existe = 0;
+            for (int j = 0; j < 50; j++) {
+                if (refuge[j].numero_id == id_unique) {
+                    existe = 1;
+                    break;
+                }
+            }
+        } while (existe);
+
+        a.numero_id = id_unique;  
             refuge[i] = a;
-            trouve = 1;
 
             FILE * ancienf = fopen("Animal/Animaux.txt", "r");
             FILE * nouveauf = fopen("Animal/temporaire.txt", "w"); 
