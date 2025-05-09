@@ -18,6 +18,7 @@ typedef struct{
 
 void RechercheAnimal(Animal *refuge);
 void Musique();
+void vide_buffer();
 void Affichageespece(int espece);
 int Age(int h, Animal *refuge);
 void ChargerNvTab(Animal* refuge, int* taille);
@@ -25,4 +26,4 @@ void AfficheAnimal(int indice, Animal* refuge);
 void Adoption(Animal *refuge);
 void Day_Food(Animal refuge[]);
 Animal Ajouter(Animal refuge[]); 
-void Menu(Animal* refuge);    
+void Menu(Animal* refuge);  
