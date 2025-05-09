@@ -406,5 +406,4 @@ Animal Ajouter(Animal refuge[]) {
     if (trouve!=1) {
         printf("Erreur : le refuge est plein.\n");
     }
-    return a;
   }
