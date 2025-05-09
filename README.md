@@ -1,2 +1,9 @@
-# Projet_Info_1
-Projet ChenYI-Tech
+Récupérer le dossier Projet 1
+Ouvrir le fichier texte Animaux
+A la première ligne du fichier écrire le nombre d'animaux présents dans le refuge
+Ouvrir le terminal
+Ecrire "make" pour compiler puis "./exec" pour éxecuter dans le terminal
+Taper respectivement: - 1 pour chercher un animal
+                      - 2 ajouter un animal dans le refuge 
+                      - 3 adopter un animal du refuge 
+                      - 4 pour voir la quantité de nourriture à donner aux animaux du refuge
