@@ -1,3 +1,4 @@
+50
 1 Iggy 0 2023 6.5 Un_chien_spécial
 2 Ignir 3 2002 120 Aime_cracher_du_feu 
 3 Salameche 3 2016 8.5 Aime_manger
