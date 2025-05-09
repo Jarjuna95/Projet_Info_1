@@ -1,6 +1,6 @@
 -Récupérer le dossier Projet 1
 -Ouvrir le fichier texte Animaux
--A la première ligne du fichier écrire le nombre d'animaux présents dans le refuge et placer le cursur à la fin de la 51ème ligne
+-A la première ligne du fichier écrire le nombre d'animaux présents dans le refuge et placer le cursur à la fin de la 51ème ligne sans faire de saut de ligne
 -Ouvrir le terminal
 -Ecrire "make" pour compiler puis "./exec" pour éxecuter dans le terminal
 -Taper respectivement: - 1 pour chercher un animal
