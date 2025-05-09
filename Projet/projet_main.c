@@ -6,4 +6,4 @@ int main(){
     Musique();
     Menu(refuge);
      return 0;
-    }
+}
