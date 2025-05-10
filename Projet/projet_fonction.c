@@ -188,7 +188,7 @@ void Adoption(Animal *refuge){
       fgets(ligne, sizeof(ligne), ancienf); //saute la premiere ligne deja lu
       while(fgets(ligne, sizeof(ligne), ancienf)){
            int id_fichier;
-           sscanf(ligne, "%d", &id_fichier);
+           sscanf(ligne, "%d", &id_fichier); //prend une info de la ligne pour la mettre dans id_fichier
            if (id_fichier != id) {
                fputs(ligne, nouveauf);
            }
