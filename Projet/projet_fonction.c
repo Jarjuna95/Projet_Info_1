@@ -70,7 +70,7 @@ void ChargerNvTab(Animal* refuge, int* taille){
         fscanf(fichier, "%d %s %d %d %f %s",
                &refuge[i].numero_id, refuge[i].nom, &refuge[i].espece,
                &refuge[i].anniv, &refuge[i].poids, refuge[i].comm);
-    }
+    } //met à jour le tableau en cas d'adoption ou ajout
     for (int i = *taille; i < 50; i++){
         refuge[i].numero_id = 0;
     } //remplir le reste avec des 0
