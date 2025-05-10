@@ -7,7 +7,8 @@
 
         1 pour chercher un animal
 
-        2 pour ajouter un animal dans le refuge (Si l'utilisateur ne veut pas mettre de commentaires, il faut qu'il écrive «rien» ou «vide»)
+        2 pour ajouter un animal dans le refuge (Si l'utilisateur ne veut pas mettre de commentaires, il faut qu'il écrive «rien» ou «vide» et s'il veut mettre plusieur mots il faut les séparer avec des 
+          tirets du 8 "_")
 
         3 pour adopter un animal du refuge
 
