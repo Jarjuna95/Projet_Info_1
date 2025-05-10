@@ -358,7 +358,7 @@ Animal Ajouter(Animal refuge[]) {
             if (refuge[i].numero_id == 0) { // une place libre ou quitte la boucle si il n'y a pas de place
                int id_unique;
                int existe;
-        do {                               
+        do {
             id_unique = 1 + rand() % 50;
             existe = 0;
             for (int j = 0; j < 50; j++) {
