@@ -54,7 +54,7 @@ int Age(int h, Animal *refuge){
         else{
             return 3;
           }
-   }
+   } //convertit en tranche d'age
 
 
 void ChargerNvTab(Animal* refuge, int* taille){
